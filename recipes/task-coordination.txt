@@ -1,0 +1,105 @@
+Creation brief: task coordination
+Brief version: 0.1.0-prototype
+Status: experimental creation brief; behavior not independently validated
+
+Create an independently authored local skill for an instruction-following agent.
+Use your organization's approved model, tools, and instruction format. This brief
+specifies desired behavior; it does not require access to any original skill
+source and does not promise source or generated-implementation equivalence.
+
+Purpose and discovery
+
+Make the skill discoverable for tasks with independently useful work packages or
+a consequential independent review. A user should not have to say "use
+subagents" for the agent to consider this workflow. Exclude trivial edits and
+tightly coupled sequential changes from routine activation. Preserve automatic
+discovery where the local agent supports it; do not claim discovery works until
+it is observed in that consuming environment.
+
+Behavior to implement
+
+1. Keep one parent accountable for the outcome, constraints, acceptance criteria,
+   shared contracts, integration, verification, and final result. Split only when
+   the outputs can be checked independently and useful work outweighs overhead.
+   Independent review may be useful after serial implementation.
+2. Inspect the locally available skills and read relevant instructions before
+   applying or assigning them. Do not depend on a particular personal skill
+   collection. If an optional skill is missing, continue with the available tools
+   and disclose limits. Surface a missing required capability rather than
+   pretending it exists; continue work that does not depend on it.
+3. Explicitly request bounded delegation when useful and permitted. If the local
+   instruction hierarchy accepts this skill as authorization, do not add a
+   redundant permission question. Honor prohibitions and all existing limits on
+   data access, writes, external services, costs, and publication. A skill must
+   never manufacture authority the consuming environment does not grant.
+4. Use the approved child-task interface when available. Default to inherited
+   model/settings, no further delegation by children, and a small concurrency
+   budget within actual capacity. If capacity is unknown, start at most one
+   child; queue remaining useful work. With no allowed child interface, execute
+   serially and describe that execution accurately.
+5. Give each child a concrete output, minimum sufficient context, dependencies,
+   shared contracts, applicable skills, acceptance criteria, evidence to return,
+   and side-effect limits. Assign exclusive file ownership or read-only work.
+   No concurrent writers to a shared file; the parent handles integration or
+   waits for ownership to be released. Do not assume inherited conversation.
+6. Track real child task identifiers and completion. Do not duplicate a possibly
+   live task. For failure, inspect partial output and stop the worker before
+   reclaiming its files. Finish locally or retry once when new information makes
+   a retry useful. Cancel obsolete work through the approved interface.
+7. Inspect returned artifacts and resolve contradictory reports with a decisive
+   check. Do not accept majority vote as proof. The parent integrates, validates
+   the combined result, and reports actual checks and unresolved issues. Never
+   invent worker activity, results, or successful verification.
+
+Required capabilities and substitutions
+
+- An approved model capable of following local instructions and reasoning about
+  dependencies; a way to read and write the local skill format; task-appropriate
+  authorized tools and access to observable artifacts.
+- Skill discovery can be a native catalog or an explicit local list readable by
+  the agent. If automatic discovery is unsupported, explicit invocation is an
+  acceptable local adaptation; disclose that limitation.
+- Delegation is optional. An approved native subagent API, a child-task queue, or
+  another supported worker interface may be used. A serial parent is the
+  substitute when none is allowed. Do not replace a prohibited interface with an
+  unapproved remote service.
+- No bundled assets or network service are required for this coordination
+  capability. Individual user tasks may separately require approved inputs,
+  tools, network access, or assets. No model vendor or version is prescribed.
+
+Externally observable acceptance criteria
+
+Exercise the candidate in an isolated local workspace with action logs, changed
+artifacts, and relevant check results. Judge actions and outcomes, not whether
+the agent repeats these instructions.
+
+- A one-file typo correction completes with zero children and a correct diff.
+- Two independent outputs, under a worker limit of two, use bounded children
+  when permitted. The parent checks both outputs and the integrated result.
+- A coupled interface change stays serial through the shared contract; no
+  overlapping writes occur. Optional independent review follows a stable result.
+- A hard no-delegation instruction or unavailable child interface produces a
+  correct serial result with zero child launches and no invented worker claims.
+- Conflicting worker reports cause the parent to inspect the artifact or run a
+  decisive check before choosing a result.
+- A missing optional skill still permits completion using available capabilities.
+- A failed worker's partial edits are inspected and ownership is reclaimed only
+  after it stops; recovery is bounded and the parent verifies the final result.
+- Six useful work packages with capacity two never exceed two active children;
+  remaining work is queued, children do not fan out, and no live task duplicates.
+
+Delivery and claims
+
+Return the local skill, the adaptations made for the consuming environment, and
+observed acceptance evidence. Separate designed, run, passed, failed, and unknown
+behavior. Record the implementation and brief versions independently. Keep model
+compatibility unknown until exercised; do not infer equivalence from similar
+wording or a single successful case. Many skills are already prompt-only: this
+path adds a behavioral specification, local adaptation, and verification.
+
+This brief does not bypass enterprise policy, procurement/security review, or
+license obligations. Establish the applicable permissions for this brief, any
+source you use, and the resulting implementation before distribution or adoption.
+This original brief is available under the repository's MIT license. Referenced
+third-party materials and independently generated implementations have their own
+applicable terms.

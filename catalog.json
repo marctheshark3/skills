@@ -1,0 +1,1471 @@
+{
+  "$schema": "./catalog.schema.json",
+  "schema_version": "0.2.0",
+  "inventory_scope": "selected-public-entries",
+  "entries": [
+    {
+      "id": "agent-body",
+      "summary": "Express coding-agent lifecycle events through restrained Autonomous Lamp body language.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/agent-body-protocol",
+          "commit": "f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "path": "skills/agent-body",
+          "download_url": "https://codeload.github.com/marctheshark3/agent-body-protocol/zip/f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "download_sha256": "988909edbf19bb7fee57ea25d85436526b6d6e7f93884e58ec1e75436f2e4917"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/agent-body-protocol/blob/f30bf69f3af2ec2d24c3728dda308eadfdf1e597/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.10",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "agent-body-protocol 0.1.0 repository/runtime (agent-body CLI or PYTHONPATH=. module invocation)",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Compatible Agent Skills host",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Local Autonomous OS HAL and Lamp or simulator for physical/visual effects",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": "conditional",
+            "note": "Real dispatch uses loopback HTTP(S) HAL only; output can be recorded without hardware/network."
+          }
+        },
+        "note": "Install the runtime separately; copying SKILL.md alone does not provide agent-body. External led-control, scene, emotion, and claude-buddy names describe separate workflow boundaries and are not bundled in this repository. Camera/computer control requires the source's separate consent and paired-companion conditions. Each source skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. The Lamp/HAL runtime is a separate integration, not supplied by installing a skill directory."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#agent-body"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "build-scribe",
+      "summary": "Save approved sanitized troubleshooting steps following an explicitly consented Agent Body help session.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/agent-body-protocol",
+          "commit": "f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "path": "skills/build-scribe",
+          "download_url": "https://codeload.github.com/marctheshark3/agent-body-protocol/zip/f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "download_sha256": "988909edbf19bb7fee57ea25d85436526b6d6e7f93884e58ec1e75436f2e4917"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/agent-body-protocol/blob/f30bf69f3af2ec2d24c3728dda308eadfdf1e597/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Agent with authorized local file-writing capability",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "An approved reusable procedure from a resolved help session",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network or executable runtime dependency."
+          }
+        },
+        "note": "Instruction-only skill; use after explicit consent and approval of the procedure. It excludes secrets, personal identifiers, private host/IP details, raw screenshots and unapproved copied output; uncertain sanitization means no save. Each source skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#build-scribe"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "captain-order",
+      "summary": "Create a four-line, gradeable coding order before implementation.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/captain-skills",
+          "commit": "b624b57877a9652496b20842b4e3af27b0aee598",
+          "path": "skills/captain-order",
+          "download_url": "https://codeload.github.com/marctheshark3/captain-skills/zip/b624b57877a9652496b20842b4e3af27b0aee598",
+          "download_sha256": "233fef8dd6d5728777eb4793b435f647ab2963d6604bdccdd531a4b32c38d1b3"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/captain-skills/blob/b624b57877a9652496b20842b4e3af27b0aee598/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Compatible Agent Skills host; documented for OpenCode",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git and the target project's existing commands/tests as applicable",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network dependency; depends on the user's project."
+          }
+        },
+        "note": "The source's preferred host is OpenCode; install.sh defaults to ~/.config/opencode/skills and requires a new session. The source installer installs all seven skills; --copy recursively removes an existing same-name destination before copying. Inspect it and preserve existing installations. Each skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. Workflow intentionally separates advice, implementation, checking, cutting, and review into fresh sessions. Inherited-context subagents do not satisfy its fresh-session requirement. Target project ownership, an external order/check, and human acceptance requirements differ by skill."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#captain-order"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "cut-bloat",
+      "summary": "Reduce an excessive diff through deletion within named behavior requirements.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/captain-skills",
+          "commit": "b624b57877a9652496b20842b4e3af27b0aee598",
+          "path": "skills/cut-bloat",
+          "download_url": "https://codeload.github.com/marctheshark3/captain-skills/zip/b624b57877a9652496b20842b4e3af27b0aee598",
+          "download_sha256": "233fef8dd6d5728777eb4793b435f647ab2963d6604bdccdd531a4b32c38d1b3"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/captain-skills/blob/b624b57877a9652496b20842b4e3af27b0aee598/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Compatible Agent Skills host; documented for OpenCode",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git and the target project's existing commands/tests as applicable",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network dependency; depends on the user's project."
+          }
+        },
+        "note": "The source's preferred host is OpenCode; install.sh defaults to ~/.config/opencode/skills and requires a new session. The source installer installs all seven skills; --copy recursively removes an existing same-name destination before copying. Inspect it and preserve existing installations. Each skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. Workflow intentionally separates advice, implementation, checking, cutting, and review into fresh sessions. Inherited-context subagents do not satisfy its fresh-session requirement. Target project ownership, an external order/check, and human acceptance requirements differ by skill."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#cut-bloat"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "hatch",
+      "summary": "Request the Lamp's named wake-up/hop then look-at-user sequence through HAL.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/agent-body-protocol",
+          "commit": "f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "path": "skills/hatch",
+          "download_url": "https://codeload.github.com/marctheshark3/agent-body-protocol/zip/f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "download_sha256": "988909edbf19bb7fee57ea25d85436526b6d6e7f93884e58ec1e75436f2e4917"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/agent-body-protocol/blob/f30bf69f3af2ec2d24c3728dda308eadfdf1e597/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.10",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "agent-body-protocol 0.1.0 repository/runtime (agent-body CLI or PYTHONPATH=. module invocation)",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Repository mapper module on PYTHONPATH or installed package",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Autonomous OS HAL and Lamp or simulator for movement",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": "conditional",
+            "note": "The documented live effect uses loopback HAL HTTP; omitted --hal produces markers without live movement."
+          }
+        },
+        "note": "Command examples use PYTHONPATH=. from the repository; skill folder alone does not supply mapper. Simulation is explicit; Qi mode refuses hatch. Raw joint control is outside this skill. Each source skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. The Lamp/HAL runtime is a separate integration, not supplied by installing a skill directory."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#hatch"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "look-follow-dance",
+      "summary": "Request named look, follow, dance, hatch, or stop Lamp behaviors through HAL.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/agent-body-protocol",
+          "commit": "f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "path": "skills/look-follow-dance",
+          "download_url": "https://codeload.github.com/marctheshark3/agent-body-protocol/zip/f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "download_sha256": "988909edbf19bb7fee57ea25d85436526b6d6e7f93884e58ec1e75436f2e4917"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/agent-body-protocol/blob/f30bf69f3af2ec2d24c3728dda308eadfdf1e597/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.10",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "agent-body-protocol 0.1.0 repository/runtime (agent-body CLI or PYTHONPATH=. module invocation)",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Repository mapper module on PYTHONPATH or installed package",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Autonomous OS HAL and Lamp or simulator",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Working camera/person tracking for follow",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": "conditional",
+            "note": "The documented live effect uses loopback HAL HTTP."
+          }
+        },
+        "note": "Command examples use PYTHONPATH=. from the repository; skill folder alone does not supply mapper. Source warns follow needs a camera and can fail in the official simulator. This provides named behaviors; it does not expose raw joint control. Each source skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. The Lamp/HAL runtime is a separate integration, not supplied by installing a skill directory."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#look-follow-dance"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "make-grade",
+      "summary": "Implement an existing coding order within its explicit checks and change budget.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/captain-skills",
+          "commit": "b624b57877a9652496b20842b4e3af27b0aee598",
+          "path": "skills/make-grade",
+          "download_url": "https://codeload.github.com/marctheshark3/captain-skills/zip/b624b57877a9652496b20842b4e3af27b0aee598",
+          "download_sha256": "233fef8dd6d5728777eb4793b435f647ab2963d6604bdccdd531a4b32c38d1b3"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/captain-skills/blob/b624b57877a9652496b20842b4e3af27b0aee598/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Compatible Agent Skills host; documented for OpenCode",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git and the target project's existing commands/tests as applicable",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network dependency; depends on the user's project."
+          }
+        },
+        "note": "The source's preferred host is OpenCode; install.sh defaults to ~/.config/opencode/skills and requires a new session. The source installer installs all seven skills; --copy recursively removes an existing same-name destination before copying. Inspect it and preserve existing installations. Each skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. Workflow intentionally separates advice, implementation, checking, cutting, and review into fresh sessions. Inherited-context subagents do not satisfy its fresh-session requirement. Target project ownership, an external order/check, and human acceptance requirements differ by skill."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#make-grade"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "make-pass",
+      "summary": "Make one existing failing behavior check pass with a narrowly scoped change.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/captain-skills",
+          "commit": "b624b57877a9652496b20842b4e3af27b0aee598",
+          "path": "skills/make-pass",
+          "download_url": "https://codeload.github.com/marctheshark3/captain-skills/zip/b624b57877a9652496b20842b4e3af27b0aee598",
+          "download_sha256": "233fef8dd6d5728777eb4793b435f647ab2963d6604bdccdd531a4b32c38d1b3"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/captain-skills/blob/b624b57877a9652496b20842b4e3af27b0aee598/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Compatible Agent Skills host; documented for OpenCode",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git and the target project's existing commands/tests as applicable",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network dependency; depends on the user's project."
+          }
+        },
+        "note": "The source's preferred host is OpenCode; install.sh defaults to ~/.config/opencode/skills and requires a new session. The source installer installs all seven skills; --copy recursively removes an existing same-name destination before copying. Inspect it and preserve existing installations. Each skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. Workflow intentionally separates advice, implementation, checking, cutting, and review into fresh sessions. Inherited-context subagents do not satisfy its fresh-session requirement. Target project ownership, an external order/check, and human acceptance requirements differ by skill."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#make-pass"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "miss-check",
+      "summary": "Turn one reported wrong behavior into one failing check without changing product code.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/captain-skills",
+          "commit": "b624b57877a9652496b20842b4e3af27b0aee598",
+          "path": "skills/miss-check",
+          "download_url": "https://codeload.github.com/marctheshark3/captain-skills/zip/b624b57877a9652496b20842b4e3af27b0aee598",
+          "download_sha256": "233fef8dd6d5728777eb4793b435f647ab2963d6604bdccdd531a4b32c38d1b3"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/captain-skills/blob/b624b57877a9652496b20842b4e3af27b0aee598/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Compatible Agent Skills host; documented for OpenCode",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git and the target project's existing commands/tests as applicable",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network dependency; depends on the user's project."
+          }
+        },
+        "note": "The source's preferred host is OpenCode; install.sh defaults to ~/.config/opencode/skills and requires a new session. The source installer installs all seven skills; --copy recursively removes an existing same-name destination before copying. Inspect it and preserve existing installations. Each skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. Workflow intentionally separates advice, implementation, checking, cutting, and review into fresh sessions. Inherited-context subagents do not satisfy its fresh-session requirement. Target project ownership, an external order/check, and human acceptance requirements differ by skill."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#miss-check"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "miss-hunt",
+      "summary": "Find three behavioral misses and encode failing checks in a fresh session without fixes.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/captain-skills",
+          "commit": "b624b57877a9652496b20842b4e3af27b0aee598",
+          "path": "skills/miss-hunt",
+          "download_url": "https://codeload.github.com/marctheshark3/captain-skills/zip/b624b57877a9652496b20842b4e3af27b0aee598",
+          "download_sha256": "233fef8dd6d5728777eb4793b435f647ab2963d6604bdccdd531a4b32c38d1b3"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/captain-skills/blob/b624b57877a9652496b20842b4e3af27b0aee598/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Compatible Agent Skills host; documented for OpenCode",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git and the target project's existing commands/tests as applicable",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network dependency; depends on the user's project."
+          }
+        },
+        "note": "The source's preferred host is OpenCode; install.sh defaults to ~/.config/opencode/skills and requires a new session. The source installer installs all seven skills; --copy recursively removes an existing same-name destination before copying. Inspect it and preserve existing installations. Each skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. Workflow intentionally separates advice, implementation, checking, cutting, and review into fresh sessions. Inherited-context subagents do not satisfy its fresh-session requirement. Target project ownership, an external order/check, and human acceptance requirements differ by skill."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#miss-hunt"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "motion-aim",
+      "summary": "Aim the Lamp toward a named HAL direction without raw joint control.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/agent-body-protocol",
+          "commit": "f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "path": "skills/motion-aim",
+          "download_url": "https://codeload.github.com/marctheshark3/agent-body-protocol/zip/f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "download_sha256": "988909edbf19bb7fee57ea25d85436526b6d6e7f93884e58ec1e75436f2e4917"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/agent-body-protocol/blob/f30bf69f3af2ec2d24c3728dda308eadfdf1e597/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.10",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "agent-body-protocol 0.1.0 repository/runtime (agent-body CLI or PYTHONPATH=. module invocation)",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "agent-body CLI",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "A marker consumer or local HAL for live aim",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": "conditional",
+            "note": "The shown --record example requires no network; real aim dispatch uses loopback HAL HTTP."
+          }
+        },
+        "note": "Install the runtime separately; copying SKILL.md alone does not provide agent-body. The shown --record command records requested markers and does not establish that a physical Lamp moved. Learned aim is a reserved optional slot; no weights/training are supplied or required. Each source skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. The Lamp/HAL runtime is a separate integration, not supplied by installing a skill directory."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#motion-aim"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "navigator",
+      "summary": "Advise on the next bounded coding workflow and provide a fresh-session handoff.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/captain-skills",
+          "commit": "b624b57877a9652496b20842b4e3af27b0aee598",
+          "path": "skills/navigator",
+          "download_url": "https://codeload.github.com/marctheshark3/captain-skills/zip/b624b57877a9652496b20842b4e3af27b0aee598",
+          "download_sha256": "233fef8dd6d5728777eb4793b435f647ab2963d6604bdccdd531a4b32c38d1b3"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/captain-skills/blob/b624b57877a9652496b20842b4e3af27b0aee598/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Compatible Agent Skills host; documented for OpenCode",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git and the target project's existing commands/tests as applicable",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": false,
+            "note": "No fixed network dependency; depends on the user's project."
+          }
+        },
+        "note": "The source's preferred host is OpenCode; install.sh defaults to ~/.config/opencode/skills and requires a new session. The source installer installs all seven skills; --copy recursively removes an existing same-name destination before copying. Inspect it and preserve existing installations. Each skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. Workflow intentionally separates advice, implementation, checking, cutting, and review into fresh sessions. Inherited-context subagents do not satisfy its fresh-session requirement. Target project ownership, an external order/check, and human acceptance requirements differ by skill."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#navigator"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "option-flow",
+      "summary": "Find and resolve bottlenecks in code, tools, and development feedback.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/option-flow",
+          "commit": "05dd4a3f71ff46a07f1c172e9aca5e1f1f8865c1",
+          "path": "skills/option-flow",
+          "download_url": "https://codeload.github.com/marctheshark3/option-flow/zip/05dd4a3f71ff46a07f1c172e9aca5e1f1f8865c1",
+          "download_sha256": "e2d6c5580eae588a772f53385e9b9b8457715a88cf137d74175fd732ce678fd4"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/option-flow/blob/05dd4a3f71ff46a07f1c172e9aca5e1f1f8865c1/skills/option-flow/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Agent with access to the code/workflow being investigated",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [
+            "skills/option-flow/LICENSE",
+            "skills/option-flow/agents/openai.yaml",
+            "skills/option-flow/references/optionality-and-measurement.md"
+          ],
+          "network": {
+            "required": false,
+            "note": "No fixed network or external service dependency."
+          }
+        },
+        "note": "Install the entire skills/option-flow directory, preserving references, agents metadata, and LICENSE."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#option-flow"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "rage-fieldbook",
+      "summary": "Maintain and validate The Rage Fieldbook's chapters, walkthroughs, notes, and research.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/rage-fieldbook",
+          "commit": "779606a3f24588740078a5976d5ad985e9a644cb",
+          "path": ".agents/skills/rage-fieldbook",
+          "download_url": null,
+          "download_sha256": null
+        },
+        "license": null,
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.11 for the book build",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Markdown==3.11.1 from repository requirements.txt",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "The complete Rage Fieldbook checkout",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Browser/preview for changed reader navigation",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [
+            ".agents/skills/rage-fieldbook/agents/openai.yaml"
+          ],
+          "network": {
+            "required": "conditional",
+            "note": "Primary-source research can require network access; book reader has no remote fonts/analytics/browser dependencies."
+          }
+        },
+        "note": "This is a repository-specific maintenance skill, not a standalone general writing skill. Paths resolve against the Fieldbook checkout; scripts, book.json, public-files.txt, templates, and publication rules are required. No blanket reuse license is granted in RIGHTS.md. Expose only a source/reference link in the catalog; download/install and recreation adoption remain unavailable."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": false,
+          "note": "Reference only. The pinned rights statement does not select a blanket reuse license."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "partial",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source and rights statement. Reuse license and adoption are unavailable; no execution or model-compatibility test.",
+            "report": "SOURCES.md#rage-fieldbook"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "reasoning-lenses",
+      "summary": "Assess proposals and decisions through faithful interpretation, challenge, and useful next tests.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/reasoning-lenses",
+          "commit": "1f81db850ae5943229cb1749416fec8c26fe39fc",
+          "path": "skills/reasoning-lenses",
+          "download_url": "https://codeload.github.com/marctheshark3/reasoning-lenses/zip/1f81db850ae5943229cb1749416fec8c26fe39fc",
+          "download_sha256": "de61812dd869bb16389dab5888e896f70ac313e715a8b1ade8779bfe4b70fb08"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/reasoning-lenses/blob/1f81db850ae5943229cb1749416fec8c26fe39fc/skills/reasoning-lenses/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Agent capable of reading SKILL.md; source access/browsing only when the task needs verification",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [
+            "skills/reasoning-lenses/LICENSE",
+            "skills/reasoning-lenses/agents/openai.yaml",
+            "skills/reasoning-lenses/references/examples-and-foundations.md"
+          ],
+          "network": {
+            "required": false,
+            "note": "No fixed executable or external service dependency."
+          }
+        },
+        "note": "Install the complete skills/reasoning-lenses directory; other hosts may require discovery configuration."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#reasoning-lenses"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "spatial-reasoning",
+      "summary": "Check practical 2D fit, distance, overlap, clearance, and bounded routes using explicit geometry.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/spatial-tools",
+          "commit": "2b1733d23b2c55fd1659a331e70ffd0234bab335",
+          "path": "skills/spatial-reasoning",
+          "download_url": "https://codeload.github.com/marctheshark3/spatial-tools/zip/2b1733d23b2c55fd1659a331e70ffd0234bab335",
+          "download_sha256": "2ed1e79ef83226e32b1b81b6f723ed91dcd8c6a832841bfbb7f685a0ad89ee0e"
+        },
+        "license": {
+          "identifier": "Apache-2.0",
+          "text_url": "https://github.com/marctheshark3/spatial-tools/blob/2b1733d23b2c55fd1659a331e70ffd0234bab335/skills/spatial-reasoning/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.10",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "spatial-tools 0.1.0 runtime from this repository",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Shapely >=2.1.2,<3; GEOS backend",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "uv for the documented locked environment setup; pip installation is also documented",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "NumPy is a transitive Shapely dependency; runtime dependency notices must be reviewed separately.",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "spatial-tools executable on PATH or this repository's .venv/bin/spatial-tools",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Explicit coordinates and a version-1 scene request",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [
+            "skills/spatial-reasoning/LICENSE",
+            "skills/spatial-reasoning/NOTICE",
+            "skills/spatial-reasoning/agents/openai.yaml",
+            "skills/spatial-reasoning/references/scene-contract.md",
+            "skills/spatial-reasoning/references/tools.md",
+            "skills/spatial-reasoning/scripts/spatial.py"
+          ],
+          "network": {
+            "required": "conditional",
+            "note": "Dependency installation may need package indexes or an approved mirror. The skill launcher does not install packages or make network calls."
+          }
+        },
+        "note": "The skill directory is not a self-contained geometry runtime. Documented installation clones the full repository, runs uv sync --locked, and symlinks the skill. A copied skill requires an installed spatial-tools command on PATH. Python wheel installation does not install the skill. Preserve LICENSE and NOTICE. Runtime dependencies retain their own licenses; THIRD_PARTY_NOTICES.md identifies Shapely BSD-3-Clause and GEOS LGPL. The install helper refuses existing skill destinations; reload skill discovery after installation."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#spatial-reasoning"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "system-observatory",
+      "summary": "Explain system intent, architecture, behavior, and design through interactive evidence-backed reports.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/system-observatory",
+          "commit": "1e46479a8730b78656c0c1874fa676c3eac4d53c",
+          "path": "skills/system-observatory",
+          "download_url": "https://codeload.github.com/marctheshark3/system-observatory/zip/1e46479a8730b78656c0c1874fa676c3eac4d53c",
+          "download_sha256": "d464bf6aec015efbea6007ba7bb3977b6b2549a1915bdfbac30da5990a78335e"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/system-observatory/blob/1e46479a8730b78656c0c1874fa676c3eac4d53c/skills/system-observatory/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.10 for packaged helpers",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Git for source snapshots and example fixtures",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Browser or HTML preview for generated standalone reports",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [
+            "skills/system-observatory/LICENSE",
+            "skills/system-observatory/agents/openai.yaml",
+            "skills/system-observatory/assets/examples/brief.md",
+            "skills/system-observatory/assets/examples/save_link.py",
+            "skills/system-observatory/assets/report.css",
+            "skills/system-observatory/assets/report.html",
+            "skills/system-observatory/assets/report.js",
+            "skills/system-observatory/references/architecture-planning.md",
+            "skills/system-observatory/references/evidence-format.md",
+            "skills/system-observatory/references/visual-design.md",
+            "skills/system-observatory/scripts/capture_snapshot.py",
+            "skills/system-observatory/scripts/compare_cases.py",
+            "skills/system-observatory/scripts/render_report.py",
+            "skills/system-observatory/scripts/run_example.py"
+          ],
+          "network": {
+            "required": false,
+            "note": "Generated reports need no server API, remote fonts, or CDN. Investigated projects can have their own setup/network requirements."
+          }
+        },
+        "note": "Install the full skill directory, including scripts, references, assets and LICENSE, or the source's self-contained ZIP. Preserve all renderer assets; SKILL.md alone is incomplete. Remove or disable an old codebase-observatory installation through its manager to avoid duplicate names. Optional development/browser tests use Playwright and Chromium; these are not runtime requirements."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#system-observatory"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "tool-flow",
+      "summary": "Audit agent tool-call histories and experiments to reduce rework and slow feedback.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/option-flow",
+          "commit": "05dd4a3f71ff46a07f1c172e9aca5e1f1f8865c1",
+          "path": "skills/tool-flow",
+          "download_url": "https://codeload.github.com/marctheshark3/option-flow/zip/05dd4a3f71ff46a07f1c172e9aca5e1f1f8865c1",
+          "download_sha256": "e2d6c5580eae588a772f53385e9b9b8457715a88cf137d74175fd732ce678fd4"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/option-flow/blob/05dd4a3f71ff46a07f1c172e9aca5e1f1f8865c1/skills/tool-flow/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "Python >=3.10 for optional standard-library analyzer",
+              "required": false,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Explicit supported JSONL logs or T3 activity export for deterministic analysis; app thread-read tools are preferred when available",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [
+            "skills/tool-flow/LICENSE",
+            "skills/tool-flow/agents/openai.yaml",
+            "skills/tool-flow/references/experiment-contracts.md",
+            "skills/tool-flow/references/log-interpretation.md",
+            "skills/tool-flow/scripts/analyze.py"
+          ],
+          "network": {
+            "required": false,
+            "note": "Optional analyzer performs no network calls and does not replay logged commands."
+          }
+        },
+        "note": "Install independently from skills/tool-flow; Option Flow is optional. Keep analyzer and both references; output paths must be fresh."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#tool-flow"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    },
+    {
+      "id": "work-light",
+      "summary": "Emit temporary neutral work-light markers during an explicitly consented help session, then restore lighting.",
+      "publication_status": "public",
+      "source": {
+        "version": null,
+        "local_path": null,
+        "provenance": {
+          "repository_url": "https://github.com/marctheshark3/agent-body-protocol",
+          "commit": "f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "path": "skills/work-light",
+          "download_url": "https://codeload.github.com/marctheshark3/agent-body-protocol/zip/f30bf69f3af2ec2d24c3728dda308eadfdf1e597",
+          "download_sha256": "988909edbf19bb7fee57ea25d85436526b6d6e7f93884e58ec1e75436f2e4917"
+        },
+        "license": {
+          "identifier": "MIT",
+          "text_url": "https://github.com/marctheshark3/agent-body-protocol/blob/f30bf69f3af2ec2d24c3728dda308eadfdf1e597/LICENSE"
+        },
+        "requirements": {
+          "tools": [
+            {
+              "capability": "A host/companion that interprets the documented HW LED markers",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            },
+            {
+              "capability": "Lamp HAL or equivalent marker-dispatch integration for the actual light",
+              "required": true,
+              "substitution": "Follow the pinned upstream instructions; use an approved equivalent only where those instructions permit it."
+            }
+          ],
+          "assets": [],
+          "network": {
+            "required": "conditional",
+            "note": "The skill itself emits markers; physical effects require the host's local HAL integration."
+          }
+        },
+        "note": "No standalone executable is included; literal HW markers need an integration that dispatches them. Consent to lighting does not grant screen inspection, camera, or computer-control access. Each source skill directory contains only SKILL.md; retain repository-root LICENSE when extracting or redistributing. The Lamp/HAL runtime is a separate integration, not supplied by installing a skill directory."
+      },
+      "recreation_brief": null,
+      "adoption": {
+        "download": {
+          "label": "Download",
+          "available": true,
+          "note": "Full pinned repository archive. Install only the named skill with its required resources and applicable license; follow upstream setup."
+        },
+        "recreate_locally": {
+          "label": "Recreate locally",
+          "available": false,
+          "note": "No separately authored and validated recreation brief is supplied for this upstream skill."
+        }
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "pinned-source-review",
+            "subject": "source",
+            "kind": "distribution-review",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Public GitHub source reads and unauthenticated archive downloads; Python standard-library SHA-256 and Git-blob verification.",
+            "scope": "Confirmed public pinned source, exact skill and license bytes, archive SHA-256, and documented requirements. No skill execution or model-compatibility test.",
+            "report": "SOURCES.md#work-light"
+          }
+        ],
+        "model_compatibility": {
+          "status": "unknown",
+          "note": "Upstream host requirements are documented. This catalog has not run a consuming-model compatibility evaluation."
+        }
+      }
+    }
+  ]
+}
