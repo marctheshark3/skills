@@ -1,0 +1,82 @@
+{
+  "$schema": "./catalog.schema.json",
+  "schema_version": "0.2.0",
+  "inventory_scope": "prototype-only",
+  "entries": [
+    {
+      "id": "task-coordination",
+      "summary": "Coordinate useful independent work and review, with one accountable parent and a serial fallback.",
+      "publication_status": "unpublished-prototype",
+      "source": {
+        "version": "0.1.0-prototype",
+        "local_path": "skills/task-coordination",
+        "provenance": null,
+        "license": null,
+        "requirements": {
+          "tools": [
+            {"capability": "Instruction-following agent with access to relevant instructions and task artifacts", "required": true, "substitution": "Use the consuming environment's approved agent and authorized task tools."},
+            {"capability": "Available skill descriptions and instruction reader", "required": false, "substitution": "Use a local explicit list, or complete the task without optional skills and disclose limits."},
+            {"capability": "Supported child-task lifecycle interface", "required": false, "substitution": "Execute serially when absent, prohibited, or not useful."}
+          ],
+          "assets": [],
+          "network": {"required": false, "note": "Coordination itself needs no network. Each user task supplies its own authorized input and tool requirements."}
+        }
+      },
+      "recreation_brief": {
+        "version": "0.1.0-prototype",
+        "local_path": "recipes/task-coordination.txt",
+        "provenance": null,
+        "license": null,
+        "claim": "proposed-independent-implementation-no-equivalence-claim",
+        "requirements": {
+          "tools": [
+            {"capability": "Locally approved generation model and a way to author the local skill format", "required": true, "substitution": "Any locally approved model and text-writing interface; no vendor prescribed."},
+            {"capability": "Consuming agent with task tools and observable artifacts for validation", "required": true, "substitution": "Use an approved local harness and isolated workspace."},
+            {"capability": "Native automatic discovery and child-task API", "required": false, "substitution": "Explicit invocation and serial execution, with these adaptations disclosed."}
+          ],
+          "assets": [],
+          "network": {"required": false, "note": "Original source access is unnecessary. Generation and consuming tools must follow local policy; no external service is prescribed."}
+        }
+      },
+      "adoption": {
+        "download": {"label": "Download", "available": false, "note": "Local review only. No verified public repository, release artifact, digest, or source license is supplied."},
+        "recreate_locally": {"label": "Recreate locally", "available": false, "note": "The brief is locally reviewable. Public brief publication, immutable digest, and licensing remain pending."}
+      },
+      "validation": {
+        "evidence": [
+          {
+            "id": "skill-package-validation",
+            "subject": "source",
+            "kind": "structural",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Python 3.12.4; PyYAML 6.0.1; bundled Skill Creator quick_validate.py",
+            "scope": "Skill package frontmatter, naming, and scaffold validation only.",
+            "report": "EVALUATION.md#executed-structural-checks"
+          },
+          {
+            "id": "catalog-contract-validation",
+            "subject": "catalog",
+            "kind": "structural",
+            "outcome": "passed",
+            "observed_on": "2026-10-22",
+            "environment": "Python 3.12.4; jsonschema 4.24.0; Draft 2020-12 with format checking",
+            "scope": "JSON syntax, schema/example agreement, local references, and 15 publication and contract checks. Public provenance and licensing unverified.",
+            "report": "EVALUATION.md#executed-structural-checks"
+          },
+          {
+            "id": "manual-serial-smoke-checks",
+            "subject": "source",
+            "kind": "behavioral",
+            "outcome": "partial",
+            "observed_on": "2026-10-22",
+            "environment": "Current authoring agent session with explicit skill loading and child tasks prohibited; Python 3.12.4 fixture runner",
+            "scope": "Observed trivial edit, serial coupled refactor, and no-delegation execution. No independent discovery or worker-lifecycle test.",
+            "report": "EVALUATION.md#observed-serial-behavior"
+          }
+        ],
+        "model_compatibility": {"status": "unknown", "note": "No independent consuming-model, automatic-discovery, delegation, or recreation evaluation has run. No model rankings are asserted."}
+      }
+    }
+  ]
+}

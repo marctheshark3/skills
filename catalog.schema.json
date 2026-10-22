@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Small skill catalog",
+  "description": "Descriptive records, not an installer. Structural eligibility cannot verify public access, provenance, license rights, or truthful evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "schema_version", "inventory_scope", "entries"],
+  "properties": {
+    "$schema": {"const": "./catalog.schema.json"},
+    "schema_version": {"const": "0.2.0"},
+    "inventory_scope": {"enum": ["prototype-only", "selected-public-entries"]},
+    "entries": {"type": "array", "items": {"$ref": "#/$defs/entry"}}
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1},
+    "httpsUrl": {"type": "string", "format": "uri", "pattern": "^https://[^/\\s]+/"},
+    "relativePath": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.?(/|$))[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*$"
+    },
+    "report": {
+      "type": "string",
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.?(/|#|$))[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*(?:#[a-z0-9-]+)?$"
+    },
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[a-z0-9.-]+)?$"},
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identifier", "text_url"],
+      "properties": {
+        "identifier": {"$ref": "#/$defs/text", "description": "Verified SPDX expression or named custom license; never infer a grant from visibility."},
+        "text_url": {"$ref": "#/$defs/httpsUrl"}
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tools", "assets", "network"],
+      "properties": {
+        "tools": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["capability", "required", "substitution"],
+            "properties": {
+              "capability": {"$ref": "#/$defs/text"},
+              "required": {"type": "boolean"},
+              "substitution": {"$ref": "#/$defs/text"}
+            }
+          }
+        },
+        "assets": {"type": "array", "items": {"$ref": "#/$defs/text"}},
+        "network": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["required", "note"],
+          "properties": {"required": {"enum": [true, false, "conditional"]}, "note": {"$ref": "#/$defs/text"}}
+        }
+      }
+    },
+    "sourceProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository_url", "commit", "path", "download_url", "download_sha256"],
+      "properties": {
+        "repository_url": {"$ref": "#/$defs/httpsUrl"},
+        "commit": {"type": "string", "pattern": "^(?:[a-f0-9]{40}|[a-f0-9]{64})$"},
+        "path": {"$ref": "#/$defs/relativePath"},
+        "download_url": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/httpsUrl"}]},
+        "download_sha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256"}]}
+      }
+    },
+    "briefProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "sha256"],
+      "properties": {"url": {"$ref": "#/$defs/httpsUrl"}, "sha256": {"$ref": "#/$defs/sha256"}}
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "local_path", "provenance", "license", "requirements"],
+      "properties": {
+        "version": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/version"}], "description": "Null when upstream is pinned by commit without a declared package version."},
+        "local_path": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/relativePath"}]},
+        "provenance": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sourceProvenance"}]},
+        "license": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/license"}]},
+        "requirements": {"$ref": "#/$defs/requirements"},
+        "note": {"$ref": "#/$defs/text"}
+      }
+    },
+    "recreationBrief": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "local_path", "provenance", "license", "claim", "requirements"],
+      "properties": {
+        "version": {"$ref": "#/$defs/version"},
+        "local_path": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/relativePath"}]},
+        "provenance": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/briefProvenance"}]},
+        "license": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/license"}]},
+        "claim": {"const": "proposed-independent-implementation-no-equivalence-claim"},
+        "requirements": {"$ref": "#/$defs/requirements"}
+      }
+    },
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "available", "note"],
+      "properties": {
+        "label": {"type": "string"},
+        "available": {"type": "boolean"},
+        "note": {"$ref": "#/$defs/text"}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "subject", "kind", "outcome", "observed_on", "environment", "scope", "report"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "subject": {"enum": ["source", "recreation-brief", "catalog"]},
+        "kind": {"enum": ["structural", "behavioral", "distribution-review"]},
+        "outcome": {"enum": ["passed", "partial", "failed"]},
+        "observed_on": {"type": "string", "format": "date"},
+        "environment": {"$ref": "#/$defs/text"},
+        "scope": {"$ref": "#/$defs/text"},
+        "report": {"$ref": "#/$defs/report"}
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "summary", "publication_status", "source", "recreation_brief", "adoption", "validation"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "summary": {"$ref": "#/$defs/text"},
+        "publication_status": {"enum": ["unpublished-prototype", "public"]},
+        "source": {"$ref": "#/$defs/source"},
+        "recreation_brief": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/recreationBrief"}]},
+        "adoption": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["download", "recreate_locally"],
+          "properties": {
+            "download": {"allOf": [{"$ref": "#/$defs/option"}, {"properties": {"label": {"const": "Download"}}}]},
+            "recreate_locally": {"allOf": [{"$ref": "#/$defs/option"}, {"properties": {"label": {"const": "Recreate locally"}}}]}
+          }
+        },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["evidence", "model_compatibility"],
+          "properties": {
+            "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}},
+            "model_compatibility": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["status", "note"],
+              "properties": {
+                "status": {"const": "unknown"},
+                "note": {"$ref": "#/$defs/text"}
+              },
+              "description": "This prototype does not model compatibility rankings. Use a future schema revision for measured model/harness combinations."
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"publication_status": {"const": "unpublished-prototype"}}},
+          "then": {"properties": {"adoption": {"properties": {
+            "download": {"properties": {"available": {"const": false}}},
+            "recreate_locally": {"properties": {"available": {"const": false}}}
+          }}}}
+        },
+        {
+          "if": {"properties": {"publication_status": {"const": "public"}}},
+          "then": {"anyOf": [
+            {"properties": {"source": {"properties": {"provenance": {"type": "object"}}}}},
+            {"properties": {"recreation_brief": {"type": "object", "properties": {"provenance": {"type": "object"}}}}}
+          ]}
+        },
+        {
+          "if": {"properties": {"adoption": {"properties": {"download": {"properties": {"available": {"const": true}}}}}}},
+          "then": {"properties": {
+            "publication_status": {"const": "public"},
+            "source": {"properties": {"provenance": {"type": "object", "properties": {"download_url": {"type": "string"}, "download_sha256": {"type": "string"}}}, "license": {"type": "object"}}},
+            "validation": {"properties": {"evidence": {"contains": {"properties": {
+              "subject": {"const": "source"}, "kind": {"const": "distribution-review"}, "outcome": {"const": "passed"}
+            }}}}}
+          }}
+        },
+        {
+          "if": {"properties": {"adoption": {"properties": {"recreate_locally": {"properties": {"available": {"const": true}}}}}}},
+          "then": {"properties": {
+            "publication_status": {"const": "public"},
+            "recreation_brief": {"type": "object", "properties": {"provenance": {"type": "object"}, "license": {"type": "object"}}},
+            "validation": {"properties": {"evidence": {"contains": {"properties": {
+              "subject": {"const": "recreation-brief"}, "kind": {"const": "distribution-review"}, "outcome": {"const": "passed"}
+            }}}}}
+          }}
+        }
+      ]
+    }
+  }
+}
