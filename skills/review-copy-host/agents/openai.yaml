@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Copy Host"
+  short_description: "Publish and replace one temporary HTML review copy"
+  default_prompt: "Use $review-copy-host to publish an approved static HTML review copy, replace it at the same running URL, or take it down."

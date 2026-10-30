@@ -44,6 +44,21 @@ The original [task-coordination draft](skills/task-coordination/SKILL.md) select
 
 Its standalone [creation brief](recipes/task-coordination.txt) can be inspected alongside the [evaluation plan and observations](EVALUATION.md). The draft and brief are MIT-licensed. Automatic discovery, live delegation, and locally recreated variants have not been independently tested. They are not presented as validated catalog adoption options.
 
+## Temporary HTML review copies
+
+The original [review-copy-host package](skills/review-copy-host/SKILL.md) serves
+one static HTML file through an existing Cloudflare Quick Tunnel, replaces it
+at the same running URL, and stops only its recorded processes. It needs Linux,
+Node 22+, Python 3.10+, Git, Linux pidfds and an existing cloudflared executable;
+it installs no tools and launches a separate Quick Tunnel.
+The package includes its MIT license.
+
+An independent agent exercised the local-only workflow, including replacement,
+the file hash guard and process identity checks. Source review then exposed
+approval-window and startup-cleanup failures; the candidate includes repairs
+and behavior regressions. Public helper startup and
+automatic discovery remain untested. See the [validation record](evaluations/review-copy-host.md).
+
 ## Compatibility and checks
 
 List capabilities first and record observed model/version/harness results after actual trials. Untested combinations remain unknown. This catalog publishes no model rankings.
