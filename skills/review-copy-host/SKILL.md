@@ -1,9 +1,17 @@
 ---
 name: review-copy-host
-description: Publish, replace, and take down one temporary static HTML review copy on Linux using an existing cloudflared executable and a file-only localhost server. Use when the same public link must survive a file replacement; permanent hosting and full application deployment are separate tasks.
+description: Publish, replace, and take down one temporary static HTML review copy on Linux when public visibility is explicitly authorized, using an existing cloudflared executable and a file-only localhost server. Use when the same public link must survive replacement; private app review, multi-asset apps and permanent hosting use their own workflows.
 ---
 
 # Review Copy Host
+
+Select this workflow only for an explicitly authorized public, single-file
+static review. A request for a review link does not choose a public audience.
+When the audience is unspecified, discover the project's existing review route
+and private hosting guidance before selecting a publisher. Preserve a requested
+private audience; do not substitute this public tunnel when private access fails.
+Keep multi-asset apps with their owning build/deployment workflow so scripts,
+styles, data, downloads, APIs and route prefixes remain available.
 
 Use existing Node 22+, Python 3.10+, Git and cloudflared executables on Linux with /proc and process file descriptors (pidfds). Local-only verification needs no cloudflared. Stop for a missing prerequisite unless installation is separately authorized. Read help/version output before using an unfamiliar version.
 
