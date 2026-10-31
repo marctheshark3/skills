@@ -5,13 +5,17 @@ description: Publish, replace, and take down one temporary static HTML review co
 
 # Review Copy Host
 
-Select this workflow only for an explicitly authorized public, single-file
-static review. A request for a review link does not choose a public audience.
+Use public publishing mode only for an explicitly authorized public, single-file
+static review. For explicitly requested single-file local verification, use
+`--local-only`; it starts no public tunnel and supplies no remote review link.
+A request for a review link does not choose a public audience.
 When the audience is unspecified, discover the project's existing review route
 and private hosting guidance before selecting a publisher. Preserve a requested
 private audience; do not substitute this public tunnel when private access fails.
 Keep multi-asset apps with their owning build/deployment workflow so scripts,
 styles, data, downloads, APIs and route prefixes remain available.
+This helper blocks scripts, including inline JavaScript; confirm that the
+approved static page remains useful with scripts blocked before publishing it.
 
 Use existing Node 22+, Python 3.10+, Git and cloudflared executables on Linux with /proc and process file descriptors (pidfds). Local-only verification needs no cloudflared. Stop for a missing prerequisite unless installation is separately authorized. Read help/version output before using an unfamiliar version.
 
